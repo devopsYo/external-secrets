@@ -9,6 +9,5 @@ spec:
       projectID: pristine-gadget-490807-c3
       auth:
         secretRef:
-          secretAccessKeyRef:
-            name: gcp-credentials 
-            key: key.json
+          name: gcp-credentials 
+          key: key.json
