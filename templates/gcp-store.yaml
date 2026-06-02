@@ -1,0 +1,14 @@
+apiVersion: external-secrets.io/v1alpha1
+kind: SecretStore
+metadata:
+  name: gcp-store
+  namespace: gateway
+spec:
+  provider:
+    gcpsm:
+      projectID: pristine-gadget-490807-c3
+      auth:
+        secretRef:
+          secretAccessKeyRef:
+            name: gcp-credentials 
+            key: key.json
