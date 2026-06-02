@@ -2,7 +2,7 @@ apiVersion: external-secrets.io/v1
 kind: SecretStore
 metadata:
   name: gcp-store
-  namespace: external-secrets
+  namespace: gateway
 spec:
   provider:
     gcpsm:
